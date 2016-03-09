@@ -7,7 +7,7 @@ images[2] = "ranch";
 images[3] = "sky";
 images[4] = "taipeistation";
 images[5] = "wetland";
-// images[6] = "";
+images[6] = "friends";
 // images[7] = "";
 // images[8] = "";
 
