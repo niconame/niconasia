@@ -1,5 +1,5 @@
 var randnum = Math.random();
-var inum = 5;
+var inum = 6;
 var rand1 = Math.round(randnum * (inum-1)) + 1;
 images = new Array;
 images[1] = "mcdonalds";
