@@ -8,6 +8,7 @@ body {
 	width: auto;
 	height: auto;
 	overflow-x: hidden;
+	opacity: 0;
 }
 
 p {
@@ -15,20 +16,40 @@ p {
 }
 
 .container {
-   	position:absolute;
-   	z-index:0;
-   	left:0;
-   	top:0;
-   	width:100%;
-   	height:100%;
-   	overflow: hidden;
+	position:absolute;
+	z-index:0;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	background-size: 100% auto; /*cover:full,根據元素的大小縮放*/
+	background-repeat: no-repeat;
+	background-position:center;
 }
 
-body {
-	background-size: 100% auto; /*cover:full,根據元素的大小縮放*/
+@media screen and (max-aspect-ratio: 1280/850){
+	.container.friends {
+		background-size: auto 100%;
+	}
 }
-@media screen and (max-aspect-ratio: 303/200){
-	body {
+
+@media screen and (max-aspect-ratio: 1/1){
+	.container.mcdonalds {
+		background-size: auto 100%;
+	}
+}
+@media screen and (max-aspect-ratio: 1280/960){
+	.container.ranch {
+		background-size: auto 100%;
+	}
+	.container.sky{
+		background-size: auto 100%;
+	}
+	.container.taipeistation {
+		background-size: auto 100%;
+	}
+	.container.wetland {
 		background-size: auto 100%;
 	}
 }
