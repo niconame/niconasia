@@ -1,20 +1,11 @@
-var randnum = Math.random();
-var inum = 6;
-var rand1 = Math.round(randnum * (inum-1)) + 1;
-images = new Array;
-images[1] = "mcdonalds";
-images[2] = "ranch";
-images[3] = "sky";
-images[4] = "taipeistation";
-images[5] = "wetland";
-images[6] = "friends";
-// images[7] = "";
-// images[8] = "";
+$(document).ready(function() {
+  var images = ['mcdonalds', 'ranch', 'sky', 'taipeistation', 'wetland', 'friends'];
+  var image_rand = images[Math.round(Math.random() * (images.length - 1))];
+  var image_url = './image/' + image_rand + '.jpg';
 
-var image = './image/' + images[rand1] + '.jpg';
-console.log(image);
-
-var $body = $('body');
-$body.css('background-image','url(' + image + ')');
-console.log($body);
-// document.write('<div class="bigImage" style="background-image: url(' + image + ');">');
+  var $container = $('.container');
+  $container.addClass(image_rand).css('background-image', 'url(' + image_url + ')');
+  $(window).load(function() {
+    $('body').animate({opacity: 1}, 500);
+  })
+});
