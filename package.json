@@ -1,0 +1,11 @@
+{
+  "name": "niconasia",
+  "author": "niconame",
+  "scripts": {
+    "serve": "sudo node server.js &"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "express": "4.13.4"
+  }
+}
