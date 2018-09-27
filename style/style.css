@@ -64,7 +64,23 @@ p {
 	}
 }
 
-.content {
+/* .content1 {
+	width: 200px;
+	background-color: white;
+	position: relative;
+	top: 60%;
+	top: calc(50% - 115px);
+	top: -moz-calc(50% - 115px);
+	top: -webkit-calc(50% - 115px);
+	right: 12%;
+	right: calc(50% - 125px);
+	right: -moz-calc(50% - 125px);
+	right: -webkit-calc(50% - 125px);
+	padding: 30px 25px 25px;
+	border-radius:10px;
+	opacity: .77;
+} */
+.content2 {
 	width: 200px;
 	background-color: white;
 	position: absolute;
